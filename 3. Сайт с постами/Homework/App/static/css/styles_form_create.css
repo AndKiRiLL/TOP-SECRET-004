@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body
+{
+    background: url(https://www.rabstol.net/uploads/gallery/main/410/rabstol_net_river_38.jpg) no-repeat;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-attachment:fixed;
+    padding-bottom: 14px;
+}
+
+.main
+{
+    display: flex;
+    overflow: visible;
+}
+
+.main__wrap
+{
+    width: 250px;
+    height: 890px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 15px;
+    left: 0;
+}
+
+.main__wrap__globaltitle
+{
+    background: linear-gradient(90deg, #3BAEE0 0%, #026A96 100%);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.main__wrap__title
+{
+    text-align: center;
+    font-family: Roboto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    text-decoration:underline 3px;
+    text-underline-offset: 5px;
+}
+
+.main__wrap__block
+{
+    display: flex;
+    flex-direction: column;
+    height: 735px;
+}
+
+.main__wrap__block__edit
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #3BAEE0 0%, #026A96 100%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 85px;
+}
+
+
+.main__wrap__block__aedit
+{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto;
+    color: #ffffff;
+    text-decoration:underline 2px;
+    text-underline-offset: 5px;
+}
+
+.main__wrap__block__aedit:hover
+{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.main__wrap__block__a
+{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto;
+    color: #000c41;
+}
+
+.main__wrap__block__a:hover
+{
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto;
+    color: #000725;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main__create
+{
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.main__create__block
+{
+    margin-top: 150px;
+    width: 550px;
+    height: 445px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main__create__block__top
+{
+    height: 60px;
+    background: linear-gradient(90deg, #3BAEE0 0%, #026A96 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.main__create__block__top__title
+{
+    text-align: center;
+    font-family: Roboto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration:underline 3px;
+    text-underline-offset: 5px;
+}
+
+.main__create__block__h3
+{
+    font-family: Roboto;
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-bottom: 5px;
+    color: #9e9e9e;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main__create__block__input
+{
+    margin-left: 35px;
+    width: 215px;
+    height: 40px;
+    background-color: #c9c9c9;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+
+    padding-left: 10px;
+
+    font-family: Roboto;
+    font-size: 18px;
+    color: #454545;
+}
+
+.main__create__block__select
+{
+    margin-left: 35px;
+    width: 225px;
+    height: 35px;
+    background: linear-gradient(90deg, #3BAEE0 0%, #026A96 100%);
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+
+    padding-left: 10px;
+
+    font-family: Roboto;
+    font-size: 18px;
+    color:#ffffff;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+select option
+{
+    border: 0;
+    margin-left: 35px;
+    width: 225px;
+    height: 35px;
+    background: #007db3;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+
+    padding-left: 10px;
+
+    font-family: Roboto;
+    font-size: 18px;
+    color:#ffffff;
+}
+
+.main__create__block__textarea
+{
+    margin-left: 35px;
+    width: 205px;
+    height: 150px;
+    background-color: #c9c9c9;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-family: Roboto;
+    font-size: 18px;
+    color: #454545;
+    resize: none;
+}
+
+.main__create__block__button
+{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(90deg, #3BAEE0 0%, #026A96 100%);
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 39px;
+    margin-top: 35px;
+
+    font-family: Roboto;
+    font-size: 18px;
+    color:#ffffff;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.25);
+}

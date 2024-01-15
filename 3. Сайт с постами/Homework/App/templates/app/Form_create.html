@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django News</title>
+    <link rel="stylesheet" href="{% static 'css/styles_form_create.css' %}">
+</head>
+<body>
+    <section class="main">
+        <div class="main__wrap">
+            <div class="main__wrap__globaltitle">
+                <h2 class="main__wrap__title">Новости</h2>
+            </div>
+            <hr>
+            <div class="main__wrap__block">
+                {% for category in categories %}
+                <a class="main__wrap__block__a" href="{% url category.path %}">{{ category }}</a>
+                <hr>
+                {% endfor %}
+            </div>
+
+            <div class="main__wrap__block__edit">
+                <a class="main__wrap__block__aedit" href="">Создать</a>
+                <a class="main__wrap__block__aedit" href="">Редактировать</a>
+            </div>
+        </div>
+
+        <div class="main__create">
+            <div class="main__create">
+                <div class="main__create__block">
+                    <div class="main__create__block__top">
+                        <h2 class="main__create__block__top__title">Создать</h2>
+                    </div>
+                    <form method="POST">
+                    {% csrf_token %}
+                        <div style="Display: flex;">
+                            <div>
+                                <h3 class="main__create__block__h3">Описание</h3>
+                                {{ form_create.name }}
+                            </div>
+                                <div>
+                                <h3 class="main__create__block__h3">URL изображения</h3>
+                                {{ form_create.image }}
+
+                                <h3 class="main__create__block__h3" style="padding-top: 52px;">Дата</h3>
+                                {{ form_create.date }}
+                                </div>
+                        </div>
+                        <div style="Display: flex;">
+                            <div>
+                                <h3 class="main__create__block__h3">Категория</h3>
+                                {{ form_create.category }}
+                            </div>
+                            <div>
+                                <h3 class="main__create__block__h3">Автор</h3>
+                                {{ form_create.author }}
+                            </div>
+                        </div>
+                        <input class="main__create__block__button" type="submit" value="Опубликовать">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</html>
